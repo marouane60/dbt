@@ -1,0 +1,268 @@
+[0m20:19:16.608835 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1049a2040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105af71f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105af7b50>]}
+
+
+============================== 20:19:16.611705 | c29c1255-511e-4500-930e-d1f419b70c5c ==============================
+[0m20:19:16.611705 [info ] [MainThread]: Running with dbt=1.5.0
+[0m20:19:16.612030 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/Users/marouanehilal/.dbt', 'log_path': '/Users/marouanehilal/Desktop/dev/repos/tuto/logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m20:19:16.865920 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c29c1255-511e-4500-930e-d1f419b70c5c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10688de20>]}
+[0m20:19:16.874161 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c29c1255-511e-4500-930e-d1f419b70c5c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1068d17c0>]}
+[0m20:19:16.921104 [debug] [MainThread]: checksum: 4568eb639a77b8fcb3a1f4a07856f42b1ff63f1376652889143968e1dbdafbda, vars: {}, profile: , target: , version: 1.5.0
+[0m20:19:16.921657 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m20:19:16.921939 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'c29c1255-511e-4500-930e-d1f419b70c5c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1068fe640>]}
+[0m20:19:17.306711 [debug] [MainThread]: 1699: static parser successfully parsed example/my_first_dbt_model.sql
+[0m20:19:17.314555 [debug] [MainThread]: 1699: static parser successfully parsed example/my_second_dbt_model.sql
+[0m20:19:17.391739 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c29c1255-511e-4500-930e-d1f419b70c5c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a54af0>]}
+[0m20:19:17.395600 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c29c1255-511e-4500-930e-d1f419b70c5c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a540d0>]}
+[0m20:19:17.395858 [info ] [MainThread]: Found 2 models, 4 tests, 0 snapshots, 0 analyses, 353 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics, 0 groups
+[0m20:19:17.396053 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c29c1255-511e-4500-930e-d1f419b70c5c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a541c0>]}
+[0m20:19:17.396794 [info ] [MainThread]: 
+[0m20:19:17.397211 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m20:19:17.397746 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_cosmic-octane-385614'
+[0m20:19:17.397890 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:19:17.990913 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_cosmic-octane-385614, now list_cosmic-octane-385614_test_dataset)
+[0m20:19:17.991796 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m20:19:18.380591 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c29c1255-511e-4500-930e-d1f419b70c5c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a54130>]}
+[0m20:19:18.382486 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m20:19:18.383065 [info ] [MainThread]: 
+[0m20:19:18.390193 [debug] [Thread-1  ]: Began running node model.tuto.my_first_dbt_model
+[0m20:19:18.390887 [info ] [Thread-1  ]: 1 of 2 START sql table model test_dataset.my_first_dbt_model ................... [RUN]
+[0m20:19:18.391798 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list_cosmic-octane-385614_test_dataset, now model.tuto.my_first_dbt_model)
+[0m20:19:18.392208 [debug] [Thread-1  ]: Began compiling node model.tuto.my_first_dbt_model
+[0m20:19:18.395883 [debug] [Thread-1  ]: Writing injected SQL for node "model.tuto.my_first_dbt_model"
+[0m20:19:18.396943 [debug] [Thread-1  ]: Timing info for model.tuto.my_first_dbt_model (compile): 20:19:18.392426 => 20:19:18.396725
+[0m20:19:18.397281 [debug] [Thread-1  ]: Began executing node model.tuto.my_first_dbt_model
+[0m20:19:18.432383 [debug] [Thread-1  ]: Writing runtime sql for node "model.tuto.my_first_dbt_model"
+[0m20:19:18.433105 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m20:19:18.434094 [debug] [Thread-1  ]: On model.tuto.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.5.0", "profile_name": "tuto", "target_name": "dev", "node_id": "model.tuto.my_first_dbt_model"} */
+
+  
+    
+
+    create or replace table `cosmic-octane-385614`.`test_dataset`.`my_first_dbt_model`
+    
+    
+
+    OPTIONS()
+    as (
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+    );
+  
+[0m20:19:18.937377 [debug] [Thread-1  ]: BigQuery adapter: Unhandled error while running:
+/* {"app": "dbt", "dbt_version": "1.5.0", "profile_name": "tuto", "target_name": "dev", "node_id": "model.tuto.my_first_dbt_model"} */
+
+  
+    
+
+    create or replace table `cosmic-octane-385614`.`test_dataset`.`my_first_dbt_model`
+    
+    
+
+    OPTIONS()
+    as (
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+    );
+  
+[0m20:19:18.938921 [debug] [Thread-1  ]: BigQuery adapter: 404 Not found: Dataset cosmic-octane-385614:test_dataset was not found in location EU
+
+Location: EU
+Job ID: 1761a243-6a29-44fc-9aae-11cfe1e75d5d
+
+[0m20:19:18.940008 [debug] [Thread-1  ]: Timing info for model.tuto.my_first_dbt_model (execute): 20:19:18.397484 => 20:19:18.939518
+[0m20:19:18.950851 [debug] [Thread-1  ]: Runtime Error in model my_first_dbt_model (models/example/my_first_dbt_model.sql)
+  404 Not found: Dataset cosmic-octane-385614:test_dataset was not found in location EU
+  
+  Location: EU
+  Job ID: 1761a243-6a29-44fc-9aae-11cfe1e75d5d
+  
+[0m20:19:18.951358 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c29c1255-511e-4500-930e-d1f419b70c5c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a2cbe0>]}
+[0m20:19:18.952068 [error] [Thread-1  ]: 1 of 2 ERROR creating sql table model test_dataset.my_first_dbt_model .......... [[31mERROR[0m in 0.56s]
+[0m20:19:18.952607 [debug] [Thread-1  ]: Finished running node model.tuto.my_first_dbt_model
+[0m20:19:18.953422 [debug] [Thread-1  ]: Began running node model.tuto.my_second_dbt_model
+[0m20:19:18.953905 [info ] [Thread-1  ]: 2 of 2 SKIP relation test_dataset.my_second_dbt_model .......................... [[33mSKIP[0m]
+[0m20:19:18.954378 [debug] [Thread-1  ]: Finished running node model.tuto.my_second_dbt_model
+[0m20:19:18.955840 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:19:18.956097 [debug] [MainThread]: Connection 'model.tuto.my_first_dbt_model' was properly closed.
+[0m20:19:18.956358 [info ] [MainThread]: 
+[0m20:19:18.956654 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 1.56 seconds (1.56s).
+[0m20:19:18.957123 [debug] [MainThread]: Command end result
+[0m20:19:18.963107 [info ] [MainThread]: 
+[0m20:19:18.963486 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m20:19:18.963781 [info ] [MainThread]: 
+[0m20:19:18.964048 [error] [MainThread]: [33mRuntime Error in model my_first_dbt_model (models/example/my_first_dbt_model.sql)[0m
+[0m20:19:18.964314 [error] [MainThread]:   404 Not found: Dataset cosmic-octane-385614:test_dataset was not found in location EU
+[0m20:19:18.964536 [error] [MainThread]:   
+[0m20:19:18.964750 [error] [MainThread]:   Location: EU
+[0m20:19:18.964972 [error] [MainThread]:   Job ID: 1761a243-6a29-44fc-9aae-11cfe1e75d5d
+[0m20:19:18.965184 [error] [MainThread]:   
+[0m20:19:18.965405 [info ] [MainThread]: 
+[0m20:19:18.965654 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=1 TOTAL=2
+[0m20:19:18.966043 [debug] [MainThread]: Command `dbt run` failed at 20:19:18.965972 after 2.37 seconds
+[0m20:19:18.966285 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1049a2040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1069f4490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1069f4790>]}
+[0m20:19:18.966532 [debug] [MainThread]: Flushing usage events
+[0m20:21:46.777742 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104dea760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105f40190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105f40af0>]}
+
+
+============================== 20:21:46.780567 | ca816aea-8ef5-4f19-862d-f02b4444f87d ==============================
+[0m20:21:46.780567 [info ] [MainThread]: Running with dbt=1.5.0
+[0m20:21:46.780881 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/marouanehilal/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/Users/marouanehilal/Desktop/dev/repos/tuto/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m20:21:47.003209 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ca816aea-8ef5-4f19-862d-f02b4444f87d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106cd6700>]}
+[0m20:21:47.011430 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ca816aea-8ef5-4f19-862d-f02b4444f87d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d239d0>]}
+[0m20:21:47.022437 [debug] [MainThread]: checksum: 4568eb639a77b8fcb3a1f4a07856f42b1ff63f1376652889143968e1dbdafbda, vars: {}, profile: , target: , version: 1.5.0
+[0m20:21:47.027872 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m20:21:47.028161 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'ca816aea-8ef5-4f19-862d-f02b4444f87d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d47d60>]}
+[0m20:21:47.432352 [debug] [MainThread]: 1699: static parser successfully parsed example/my_first_dbt_model.sql
+[0m20:21:47.439716 [debug] [MainThread]: 1699: static parser successfully parsed example/my_second_dbt_model.sql
+[0m20:21:47.483936 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ca816aea-8ef5-4f19-862d-f02b4444f87d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e96040>]}
+[0m20:21:47.487565 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ca816aea-8ef5-4f19-862d-f02b4444f87d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106de7070>]}
+[0m20:21:47.487780 [info ] [MainThread]: Found 2 models, 4 tests, 0 snapshots, 0 analyses, 353 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics, 0 groups
+[0m20:21:47.487966 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ca816aea-8ef5-4f19-862d-f02b4444f87d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d23dc0>]}
+[0m20:21:47.488617 [info ] [MainThread]: 
+[0m20:21:47.489002 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m20:21:47.489522 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_cosmic-octane-385614'
+[0m20:21:47.489724 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:21:48.000467 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_cosmic-octane-385614, now list_cosmic-octane-385614_test_dataset)
+[0m20:21:48.001177 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m20:21:48.488821 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ca816aea-8ef5-4f19-862d-f02b4444f87d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106db5640>]}
+[0m20:21:48.491466 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m20:21:48.492261 [info ] [MainThread]: 
+[0m20:21:48.498824 [debug] [Thread-1  ]: Began running node model.tuto.my_first_dbt_model
+[0m20:21:48.499503 [info ] [Thread-1  ]: 1 of 2 START sql table model test_dataset.my_first_dbt_model ................... [RUN]
+[0m20:21:48.500435 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly list_cosmic-octane-385614_test_dataset, now model.tuto.my_first_dbt_model)
+[0m20:21:48.500847 [debug] [Thread-1  ]: Began compiling node model.tuto.my_first_dbt_model
+[0m20:21:48.504851 [debug] [Thread-1  ]: Writing injected SQL for node "model.tuto.my_first_dbt_model"
+[0m20:21:48.505897 [debug] [Thread-1  ]: Timing info for model.tuto.my_first_dbt_model (compile): 20:21:48.501096 => 20:21:48.505670
+[0m20:21:48.506242 [debug] [Thread-1  ]: Began executing node model.tuto.my_first_dbt_model
+[0m20:21:48.539678 [debug] [Thread-1  ]: Writing runtime sql for node "model.tuto.my_first_dbt_model"
+[0m20:21:48.540273 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m20:21:48.541343 [debug] [Thread-1  ]: On model.tuto.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.5.0", "profile_name": "tuto", "target_name": "dev", "node_id": "model.tuto.my_first_dbt_model"} */
+
+  
+    
+
+    create or replace table `cosmic-octane-385614`.`test_dataset`.`my_first_dbt_model`
+    
+    
+
+    OPTIONS()
+    as (
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+    );
+  
+[0m20:21:51.199122 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=cosmic-octane-385614&j=bq:europe-west9:443470e6-6592-49b0-a8f1-5a0f8ec204aa&page=queryresults
+[0m20:21:51.225164 [debug] [Thread-1  ]: Timing info for model.tuto.my_first_dbt_model (execute): 20:21:48.506450 => 20:21:51.224925
+[0m20:21:51.226033 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ca816aea-8ef5-4f19-862d-f02b4444f87d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d474f0>]}
+[0m20:21:51.226625 [info ] [Thread-1  ]: 1 of 2 OK created sql table model test_dataset.my_first_dbt_model .............. [[32mCREATE TABLE (2.0 rows, 0 processed)[0m in 2.73s]
+[0m20:21:51.227167 [debug] [Thread-1  ]: Finished running node model.tuto.my_first_dbt_model
+[0m20:21:51.227824 [debug] [Thread-1  ]: Began running node model.tuto.my_second_dbt_model
+[0m20:21:51.228363 [info ] [Thread-1  ]: 2 of 2 START sql view model test_dataset.my_second_dbt_model ................... [RUN]
+[0m20:21:51.229039 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.tuto.my_first_dbt_model, now model.tuto.my_second_dbt_model)
+[0m20:21:51.229341 [debug] [Thread-1  ]: Began compiling node model.tuto.my_second_dbt_model
+[0m20:21:51.232131 [debug] [Thread-1  ]: Writing injected SQL for node "model.tuto.my_second_dbt_model"
+[0m20:21:51.233037 [debug] [Thread-1  ]: Timing info for model.tuto.my_second_dbt_model (compile): 20:21:51.229524 => 20:21:51.232878
+[0m20:21:51.233291 [debug] [Thread-1  ]: Began executing node model.tuto.my_second_dbt_model
+[0m20:21:51.248685 [debug] [Thread-1  ]: Writing runtime sql for node "model.tuto.my_second_dbt_model"
+[0m20:21:51.249086 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m20:21:51.250114 [debug] [Thread-1  ]: On model.tuto.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.5.0", "profile_name": "tuto", "target_name": "dev", "node_id": "model.tuto.my_second_dbt_model"} */
+
+
+  create or replace view `cosmic-octane-385614`.`test_dataset`.`my_second_dbt_model`
+  OPTIONS()
+  as -- Use the `ref` function to select from other models
+
+select *
+from `cosmic-octane-385614`.`test_dataset`.`my_first_dbt_model`
+where id = 1;
+
+
+[0m20:21:52.862931 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=cosmic-octane-385614&j=bq:europe-west9:c5262430-e8b7-4a80-ac2d-82fa4959052d&page=queryresults
+[0m20:21:52.865391 [debug] [Thread-1  ]: Timing info for model.tuto.my_second_dbt_model (execute): 20:21:51.233443 => 20:21:52.865179
+[0m20:21:52.866255 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ca816aea-8ef5-4f19-862d-f02b4444f87d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106fe6a00>]}
+[0m20:21:52.866946 [info ] [Thread-1  ]: 2 of 2 OK created sql view model test_dataset.my_second_dbt_model .............. [[32mCREATE VIEW (0 processed)[0m in 1.64s]
+[0m20:21:52.867543 [debug] [Thread-1  ]: Finished running node model.tuto.my_second_dbt_model
+[0m20:21:52.869205 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:21:52.869460 [debug] [MainThread]: Connection 'model.tuto.my_second_dbt_model' was properly closed.
+[0m20:21:52.869726 [info ] [MainThread]: 
+[0m20:21:52.870025 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 5.38 seconds (5.38s).
+[0m20:21:52.870769 [debug] [MainThread]: Command end result
+[0m20:21:52.880906 [info ] [MainThread]: 
+[0m20:21:52.881318 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m20:21:52.881607 [info ] [MainThread]: 
+[0m20:21:52.881920 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m20:21:52.882498 [debug] [MainThread]: Command `dbt run` succeeded at 20:21:52.882395 after 6.12 seconds
+[0m20:21:52.882849 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104dea760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f05f70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e96100>]}
+[0m20:21:52.883183 [debug] [MainThread]: Flushing usage events
